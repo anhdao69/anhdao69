@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 10 820 466" width="820" height="466" role="img" aria-label="Research roadmap as a humanoid robot. Head: perceive (IndustryEQA, IndustryNav, OpenBelief-Nav). Legs: navigate (HumanoidVLN, StageVLN, AdaGeoVLN, GlanceNav). Arms: act with world action models (LoopedWAM). Core: efficiency.">
+<style>
+  .plate { fill: url(#metal); stroke: #8a939e; stroke-width: 1.3; stroke-linejoin: round; }
+  .seam { fill: none; stroke: #8a939e; stroke-opacity: .55; stroke-width: 1.1; stroke-linecap: round; }
+  .shadow { fill: #16191e; opacity: .1; }
+  .trail { fill: #0b8a75; }
+  .belly { fill: #ffffff; stroke: #8a939e; stroke-opacity: .5; stroke-width: 1.1; }
+  .acc { stroke-width: 1.5; }
+  .accl { fill: none; stroke-width: 2; stroke-linecap: round; }
+  .glow { fill: none; stroke-width: 6; opacity: .14; }
+  .eye { fill: #8fdcff; }
+  .glare { fill: none; stroke: #fff; stroke-opacity: .28; stroke-width: 2; stroke-linecap: round; }
+  .smile { fill: none; stroke: #8fdcff; stroke-width: 3.6; stroke-linecap: round; }
+  .lead { fill: none; stroke-width: 1.3; stroke-dasharray: 3 4; }
+  .t1 { font: 500 11.5px 'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; letter-spacing: .1em; }
+  .t2 { font: 600 16px 'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; fill: #16191e; }
+  .pp { font: 400 14px 'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; fill: #1f5fbf; }
+  .pp tspan { fill: #5c646f; font-size: 12.5px; }
+  .pn { font: italic 400 13px 'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; fill: #5c646f; }
+  .head .acc { fill: #dadaf5; stroke: #5557d2; }
+  .head .accs { fill: #5557d2; }
+  .head .accl, .head .glow { stroke: #5557d2; }
+  .co.head .lead { stroke: #5557d2; } .co.head .dot, .co.head .t1 { fill: #5557d2; }
+  .legs .acc { fill: #c9e5e1; stroke: #0b8a75; }
+  .legs .accs { fill: #0b8a75; }
+  .legs .accl, .legs .glow { stroke: #0b8a75; }
+  .co.legs .lead { stroke: #0b8a75; } .co.legs .dot, .co.legs .t1 { fill: #0b8a75; }
+  .arms .acc { fill: #eeddc9; stroke: #b4650c; }
+  .arms .accs { fill: #b4650c; }
+  .arms .accl, .arms .glow { stroke: #b4650c; }
+  .co.arms .lead { stroke: #b4650c; } .co.arms .dot, .co.arms .t1 { fill: #b4650c; }
+  .core .acc { fill: #f4d4da; stroke: #cf3a55; }
+  .core .accs { fill: #cf3a55; }
+  .core .accl, .core .glow { stroke: #cf3a55; }
+  .co.core .lead { stroke: #cf3a55; } .co.core .dot, .co.core .t1 { fill: #cf3a55; }
+</style>
+<defs>
+  <linearGradient id="metal" x1="0" x2="1" y1="0" y2="0.3">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#eceff3"/><stop offset="1" stop-color="#d3d9e0"/>
+  </linearGradient>
+  <linearGradient id="screenG" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#2a313b"/><stop offset="1" stop-color="#0d1015"/>
+  </linearGradient>
+</defs>
+
+<!-- callouts -->
+<g class="co head">
+  <path class="lead" d="M410 74 H346"/><circle class="dot" cx="410" cy="74" r="3"/>
+  <text class="t1" x="334" y="56" text-anchor="end">HEAD · PERCEIVE</text>
+  <text class="t2" x="334" y="79" text-anchor="end">Spatial reasoning and safety</text>
+  <text class="pp" x="334" y="105" text-anchor="end">IndustryEQA <tspan>NeurIPS 2025</tspan></text>
+  <text class="pp" x="334" y="127" text-anchor="end">IndustryNav <tspan>arXiv 2025</tspan></text>
+  <text class="pp" x="334" y="149" text-anchor="end">OpenBelief-Nav <tspan>Humanoids 2026</tspan></text>
+</g>
+<g class="co legs">
+  <path class="lead" d="M444 358 H346"/><circle class="dot" cx="444" cy="358" r="3"/>
+  <text class="t1" x="334" y="340" text-anchor="end">LEGS · NAVIGATE</text>
+  <text class="t2" x="334" y="363" text-anchor="end">Language-guided navigation</text>
+  <text class="pp" x="334" y="389" text-anchor="end">HumanoidVLN <tspan>Humanoids 2026</tspan></text>
+  <text class="pp" x="334" y="411" text-anchor="end">StageVLN <tspan>arXiv 2026</tspan></text>
+  <text class="pp" x="334" y="433" text-anchor="end">AdaGeoVLN <tspan>arXiv 2026</tspan></text>
+  <text class="pp" x="334" y="455" text-anchor="end">GlanceNav <tspan>arXiv 2026</tspan></text>
+</g>
+<g class="co core">
+  <path class="lead" d="M496 172 H614"/><circle class="dot" cx="614" cy="172" r="3"/>
+  <text class="t1" x="626" y="154">CORE · EFFICIENCY</text>
+  <text class="t2" x="626" y="177">Less compute at inference</text>
+  <text class="pp" x="626" y="203">LoopedWAM <tspan>looped shared depth</tspan></text>
+  <text class="pp" x="626" y="225">GlanceNav <tspan>streaming memory</tspan></text>
+  <text class="pp" x="626" y="247">StageVLN <tspan>training-only guidance</tspan></text>
+  <text class="pp" x="626" y="269">AdaGeoVLN <tspan>budgeted geometry memory</tspan></text>
+</g>
+<g class="co arms">
+  <path class="lead" d="M572 292 L596 358 H614"/><circle class="dot" cx="614" cy="358" r="3"/>
+  <text class="t1" x="626" y="340">ARMS · ACT</text>
+  <text class="t2" x="626" y="363">World action models</text>
+  <text class="pp" x="626" y="389">LoopedWAM <tspan>arXiv 2026</tspan></text>
+  <text class="pn" x="626" y="411">Real-robot results on an AgileX PiPER arm</text>
+</g>
+
+<!-- robot -->
+<g transform="translate(330 22)">
+  <ellipse class="shadow" cx="150" cy="437" rx="70" ry="6.5"/>
+  <circle class="trail" cx="230" cy="437" r="2.6"/><circle class="trail" cx="248" cy="437" r="2.6" opacity=".7"/><circle class="trail" cx="266" cy="437" r="2.6" opacity=".45"/><circle class="trail" cx="284" cy="437" r="2.6" opacity=".25"/>
+
+  <g class="legs">
+    <rect class="plate" x="115" y="258" width="26" height="78" rx="13"/>
+    <rect class="plate" x="159" y="258" width="26" height="78" rx="13"/>
+    <path class="plate" d="M117 342 H139 C141 360 141 384 138 406 H118 C115 384 115 360 117 342 Z"/>
+    <path class="plate" d="M161 342 H183 C185 360 185 384 182 406 H162 C159 384 159 360 161 342 Z"/>
+    <path class="seam" d="M121 372 H135 M165 372 H179"/>
+    <circle class="acc" cx="128" cy="339" r="11"/><circle class="acc" cx="172" cy="339" r="11"/>
+    <rect class="acc" x="114" y="403" width="28" height="7" rx="3"/><rect class="acc" x="158" y="403" width="28" height="7" rx="3"/>
+    <path class="plate" d="M110 410 H140 C151 410 158 417 158 425 V432 H104 V417 C104 413 106 410 110 410 Z"/>
+    <path class="plate" d="M160 410 H190 C194 410 196 413 196 417 V432 H142 V425 C142 417 149 410 160 410 Z"/>
+    <rect class="accs" x="104" y="430" width="54" height="4" rx="2"/><rect class="accs" x="142" y="430" width="54" height="4" rx="2"/>
+    <circle class="acc" cx="128" cy="262" r="10"/><circle class="acc" cx="172" cy="262" r="10"/>
+  </g>
+
+  <g>
+    <path class="plate" d="M112 232 H188 C191 232 193 235 192 238 L185 257 C176 268 124 268 115 257 L108 238 C107 235 109 232 112 232 Z"/>
+    <rect class="plate" x="124" y="210" width="52" height="24" rx="9"/>
+    <path class="seam" d="M130 218 H170 M130 226 H170"/>
+    <path class="plate" d="M100 120 C100 111 112 106 126 106 H174 C188 106 200 111 200 120 L204 150 C204 182 190 204 172 212 H128 C110 204 96 182 96 150 Z"/>
+    <rect class="belly" x="116" y="122" width="68" height="62" rx="22"/>
+    <path class="seam" d="M150 186 V208"/>
+    <rect class="plate" x="140" y="94" width="20" height="16" rx="5"/>
+    <path class="seam" d="M143 100 H157 M143 105 H157"/>
+  </g>
+
+  <g class="arms">
+    <rect class="plate" x="78" y="130" width="22" height="62" rx="11" transform="rotate(10 89 130)"/>
+    <rect class="plate" x="67" y="191" width="22" height="56" rx="11" transform="rotate(5 78 191)"/>
+    <rect class="acc" x="62" y="243" width="23" height="7" rx="3" transform="rotate(5 74 246)"/>
+    <g transform="rotate(5 74 250)">
+      <rect class="plate" x="63" y="250" width="22" height="18" rx="7"/>
+      <rect class="plate" x="64" y="264" width="6" height="12" rx="3"/><rect class="plate" x="71" y="265" width="6" height="12" rx="3"/><rect class="plate" x="78" y="264" width="6" height="11" rx="3"/>
+      <rect class="plate" x="82" y="252" width="7" height="13" rx="3.5" transform="rotate(-20 85 258)"/>
+    </g>
+    <circle class="acc" cx="78" cy="191" r="8.5"/>
+    <circle class="acc" cx="90" cy="126" r="15"/>
+
+    <rect class="plate" x="200" y="130" width="22" height="62" rx="11" transform="rotate(-10 211 130)"/>
+    <g>
+      <rect class="plate" x="211" y="191" width="22" height="56" rx="11" transform="rotate(-5 222 191)"/>
+      <rect class="acc" x="215" y="243" width="23" height="7" rx="3" transform="rotate(-5 226 246)"/>
+      <g transform="rotate(-5 226 250)">
+        <rect class="plate" x="215" y="250" width="22" height="18" rx="7"/>
+        <rect class="plate" x="216" y="264" width="6" height="11" rx="3"/><rect class="plate" x="223" y="265" width="6" height="12" rx="3"/><rect class="plate" x="230" y="264" width="6" height="12" rx="3"/>
+        <rect class="plate" x="211" y="252" width="7" height="13" rx="3.5" transform="rotate(20 215 258)"/>
+      </g>
+      <!-- waves hello every 8 s -->
+      <animateTransform attributeName="transform" type="rotate" begin="1s" dur="8s" repeatCount="indefinite"
+        values="0 222 191; -150 222 191; -172 222 191; -138 222 191; -170 222 191; -142 222 191; 0 222 191; 0 222 191"
+        keyTimes="0; .06; .096; .132; .168; .21; .3; 1" calcMode="spline"
+        keySplines=".4 0 .2 1; .4 0 .6 1; .4 0 .6 1; .4 0 .6 1; .4 0 .6 1; .4 0 .2 1; 0 0 1 1"/>
+    </g>
+    <circle class="acc" cx="222" cy="191" r="8.5"/>
+    <circle class="acc" cx="210" cy="126" r="15"/>
+  </g>
+
+  <g class="head">
+    <rect class="plate" x="92" y="6" width="116" height="92" rx="44"/>
+    <rect x="105" y="19" width="90" height="66" rx="28" fill="url(#screenG)"/>
+    <path class="glare" d="M116 30 C124 24 136 22 148 22"/>
+    <ellipse class="eye" cx="133" cy="47" rx="7.5" ry="11"><animate attributeName="ry" values="11;11;1.2;11" keyTimes="0;.93;.965;1" dur="4.8s" repeatCount="indefinite"/></ellipse>
+    <ellipse class="eye" cx="167" cy="47" rx="7.5" ry="11"><animate attributeName="ry" values="11;11;1.2;11" keyTimes="0;.93;.965;1" dur="4.8s" repeatCount="indefinite"/></ellipse>
+    <path class="smile" d="M134 66 Q150 78 166 66"/>
+    <rect class="acc" x="84" y="36" width="12" height="32" rx="6"/><path class="accl" d="M90 44 V60"/>
+    <rect class="acc" x="204" y="36" width="12" height="32" rx="6"/><path class="accl" d="M210 44 V60"/>
+  </g>
+
+  <g class="core">
+    <circle class="glow" cx="150" cy="150" r="21"><animate attributeName="opacity" values=".08;.3;.08" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle class="acc" cx="150" cy="150" r="16"/>
+    <path class="accs" d="M153.5 137 l-10 14.5 h7 l-3.5 11 10-14.5 h-7 z"/>
+  </g>
+</g>
+</svg>
